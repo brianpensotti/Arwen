@@ -1,0 +1,398 @@
+body{
+    margin: 0;
+    background-color: skyblue;
+}
+
+/*H1*/
+.h1Fuente{
+    color:rgb(130, 45, 130);
+    margin-top: 40px;
+    font-size: 2rem;
+    font-family: 'Merienda One', cursive;
+    text-align: center;
+}
+
+.h1FuenteV2{
+    color:rgb(130, 45, 130);
+    margin-top: 40px;
+    font-size: 2.5rem;
+    font-family: 'Merienda One', cursive;
+    text-align: center;
+    padding-left: 10px;
+}
+
+/*NAVEGADOR*/
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 24rem;
+}
+.nav_hipervinculo{
+    text-decoration:none;
+    color: skyblue;
+    font-style: italic;
+    font-size: x-large;
+    padding: 7px;
+    transition: all 0.4s;
+}
+.nav_hipervinculo:hover{
+    color: white;
+}
+
+/*PÁGINA PRINCIPAL*/
+.gridProductosPrincipal{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 2rem;
+}
+.principalImgTamanioProductos{
+    width: 18rem;
+    transition: all 0.4s;
+    padding: .3rem;
+    border-radius: 15px;
+}
+.principalImgTamanioProductos:hover{
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+/*PÁGINA PRINCIPAL DE PRODUCTOS*/
+.productosListaBox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.productosLista{
+    display: flex;
+    width: 800px;
+}
+.productosListaFormato{
+    list-style: none;
+}
+.productosHipervinculo{
+    text-decoration: none;
+    color:rgb(130, 45, 130);
+    font-size: 1rem;
+    font-family: cursive;
+    transition: all 0.4s;
+}
+.productosHipervinculo:hover{
+    color: white;
+}
+
+/*PÁGINA DE PRODUCTOS*/
+.productosCategoriaBox{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.productosImg{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 1.5rem;
+}
+.productoIndividual{
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s;
+}
+.productoIndividual:hover{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+}
+.productosTamanioImg{
+    width: 200px;
+    border-radius: 12px;
+}
+.productosTextoBoxLeyenda{
+    width: 200px;
+    height: 140px;
+    padding-left: 24px;
+    color:rgb(130, 45, 130);
+    font-weight: bold;
+}
+.productoVolverBox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 11px;
+}
+.productoVolverBox2{
+    display: flex;
+    width: 1120px;
+}
+.productosVolver{
+    text-decoration: none;
+    color:rgb(130, 45, 130);
+    font-size: 1.5rem;
+    font-family: cursive;
+    transition: all 0.4s;
+}
+.productosVolver:hover{
+    color: white;
+}
+
+/*PÁGINA SOBRE NOSOTROS*/
+.sobreNosBox{
+    display: flex;
+    justify-content: center;
+}
+.sobreNosItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+}
+.sobreNosotrosTexto{
+    font-size: 2rem;
+    color:rgb(130, 45, 130);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0;
+}
+.sobreNosotros__fotoIncubaBox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.sobreNosotros__fotoIncuba{
+    width: 300px;
+    border-radius: 15px;
+}
+
+/*PÁGINA UBICACIÓN*/
+.ubicacionBox{
+    display: flex;
+    justify-content: center;
+}
+.ubicacionItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.iframeBox{
+    display: flex;
+    width: 10rem;
+    justify-content: center;
+}
+.mapa__direccion{
+    font-style: italic;
+    font-size: large;
+    color:rgb(130, 45, 130);
+}
+
+/*PÁGINA FORMULARIO DE CONTACTO*/
+.formularioSect{
+    display: flex;
+    justify-content: center;
+}
+.formularioBox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px; 
+}
+.campo{
+    display: flex;
+    margin-top: 5px;
+    background-color: rgb(132, 199, 226);
+    width: 250px;
+}
+.campoRellenable{
+    display: flex;
+    margin-top: 5px;
+    background-color: skyblue;
+}
+.formularioText{
+    font-style: italic;
+    color:rgb(130, 45, 130);
+}
+.boton{
+    background-color: rgb(100, 202, 242);
+}
+
+/*PIE DE PÁGINA*/
+footer{
+    position: relative;
+    bottom: 0;
+    background-color: black;
+    height: 15rem;
+}
+.pieBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.irArribaBox{
+    display: flex;
+    align-items: center;
+}
+.irArribaText{
+    text-decoration:none;
+    color: skyblue;
+    font-size: large;
+    padding-left: 3px;
+    transition: all 0.4s;
+}
+.irArribaText:hover{
+    color: white;
+}
+.wpBox{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+.igBox{
+    display: flex;
+    align-items: center;
+}
+.pieText{
+    text-decoration:none;
+    color: skyblue;
+    font-size: large;
+    transition: all 0.4s;
+}
+.pieText:hover{
+color: white;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width:580px){
+    .productosImg{
+        flex-direction: row;
+        margin-left: 75px;
+    }
+}
+@media screen and (min-width:768px){
+    .h1Fuente{
+        font-size: 4rem;
+    }
+    nav{
+        flex-direction: row;
+        height: 12rem;
+    }
+    .gridProductosPrincipal{
+        grid-template-columns: repeat(2, 18.5rem);
+    }
+    .productosImg{
+        margin-left: 61px;
+    }
+    .pieBox{
+        flex-direction: row;
+    }
+    footer{
+        height: 10rem;
+    }
+    .productosHipervinculo{
+        font-size: 1.5rem;
+    }
+    .sobreNosotros__fotoIncuba{
+        width: 720px;
+    }
+    .iframeBox{
+        width: 40rem;
+    }
+    .campo{
+        width: 400px;
+    }
+}
+@media screen and (min-width:1024px){
+    .gridProductosPrincipal{
+        grid-template-columns: repeat(3, 18.5rem);
+    }
+    .productosImg{
+        margin-left: 74px;
+    }
+    #img19Fix{
+        display: none;
+    }
+    .sobreNosotros__fotoIncuba{
+        width: 1000px;
+    }
+    .sobreNosotros__fotoIncubaBox{
+        margin-bottom: 3rem;
+    }
+    .iframeBox{
+        width: 60rem;
+    }
+}
+@media screen and (min-width:1440px){
+    .gridProductosPrincipal{
+        grid-template-columns: repeat(4, 18.5rem);
+    }
+    .productosImg{
+        margin-left: 60px;
+    }
+    #img19Fix{
+        display: block;
+    }
+    .iframeBox{
+        width: 90rem;
+    }
+}
+@media screen and (min-width:1920px){
+    .gridProductosPrincipal{
+        grid-template-columns: repeat(5, 18.5rem);
+    }
+    .productosImg{
+        margin-left: 29px;
+    }
+    #img18Fix{
+        display: none;
+    }
+    .agendas2022-vh-1920{
+        height: 100vh;
+    }
+    .agendasEspecialesSectVH1920{
+        height: 100vh;
+    }
+    .cuadernosPediatricosSectVH1920{
+        height: 100vh;
+    }
+    .cuadernosUniversitarios-vh-1920{
+        height: 100vh;
+    }
+    .cuadernosPersonalizados-vh-1920{
+        height: 100vh;
+    }
+    .cuadernosSouvenir-vh-1920{
+        height: 100vh;
+    }
+}
+
+/*Ajuste VH 320 hasta 1919*/
+.paginaProdVH{
+    height: 100vh;
+}
+.ubicacionSect{
+    height: 100vh;
+}
+.formularioSect{
+    height: 100vh;
+}
+.agendas2022-vh{
+    height: 100vh;
+}
+.agendasEspecialesSect{
+    height: 100vh;
+}
+.cuadernosPediatricosSect{
+    height: 100vh;
+}
+.cuadernosUniversitarios-vh{
+    height: 100vh;
+}
+.cuadernosPersonalizados-vh{
+    height: 100vh;
+}
+.cuadernosSouvenir-vh{
+    height: 100vh;
+}
