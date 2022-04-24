@@ -195,7 +195,7 @@ nav{
 .formularioBox{
     display: flex;
     justify-content: center;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 .campo{
     display: flex;
@@ -345,6 +345,9 @@ color: white;
     .productosImg{
         margin-left: 29px;
     }
+    .formularioVH{
+        height: 70vh;
+    }
     #img18Fix{
         display: none;
     }
@@ -373,9 +376,6 @@ color: white;
     height: 100vh;
 }
 .ubicacionSect{
-    height: 100vh;
-}
-.formularioSect{
     height: 100vh;
 }
 .agendas2022-vh{
