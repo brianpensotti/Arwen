@@ -64,7 +64,7 @@ nav{
 .productosListaBox{
     display: flex;
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 .productosLista{
     display: flex;
@@ -82,6 +82,16 @@ nav{
 }
 .productosHipervinculo:hover{
     color: white;
+}
+.productosPaginaTamanio{
+    width: 18rem;
+    transition: all 0.4s;
+    padding: .3rem;
+    border-radius: 15px;
+}
+.productosPaginaTamanio:hover{
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
 }
 .gridPaginaPrincipalProductos{
     display: grid;
@@ -276,6 +286,9 @@ color: white;
         flex-direction: row;
         margin-left: 75px;
     }
+    .productosPaginaTamanio{
+        width: 26rem;
+    }
 }
 @media screen and (min-width:768px){
     .h1Fuente{
@@ -290,6 +303,10 @@ color: white;
     }
     .gridPaginaPrincipalProductos{
         grid-template-columns: repeat(2, 18.5rem);
+        grid-column-gap: 4rem;
+    }
+    .productosPaginaTamanio{
+        width: 22rem;
     }
     .productosImg{
         margin-left: 61px;
@@ -317,8 +334,12 @@ color: white;
     .gridProductosPrincipal{
         grid-template-columns: repeat(3, 18.5rem);
     }
+    .productosPaginaTamanio{
+        width: 20rem;
+    }
     .gridPaginaPrincipalProductos{
         grid-template-columns: repeat(3, 18.5rem);
+        grid-column-gap: 2rem;
     }
     .productosImg{
         margin-left: 74px;
@@ -340,8 +361,12 @@ color: white;
     .gridProductosPrincipal{
         grid-template-columns: repeat(4, 18.5rem);
     }
+    .productosPaginaTamanio{
+        width: 26rem;
+    }
     .gridPaginaPrincipalProductos{
-        grid-template-columns: repeat(4, 18.5rem);
+        grid-template-columns: repeat(3, 18.5rem);
+        grid-column-gap: 8rem;
     }
     .productosImg{
         margin-left: 60px;
@@ -357,8 +382,12 @@ color: white;
     .gridProductosPrincipal{
         grid-template-columns: repeat(5, 18.5rem);
     }
+    .productosPaginaTamanio{
+        width: 32rem;
+    }
     .gridPaginaPrincipalProductos{
-        grid-template-columns: repeat(5, 18.5rem);
+        grid-template-columns: repeat(3, 18.5rem);
+        grid-column-gap: 14rem;
     }
     .productosImg{
         margin-left: 29px;
