@@ -83,6 +83,12 @@ nav{
 .productosHipervinculo:hover{
     color: white;
 }
+.gridPaginaPrincipalProductos{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 2rem;
+}
 
 /*PÁGINA DE PRODUCTOS*/
 .productosCategoriaBox{
@@ -265,7 +271,7 @@ color: white;
 }
 
 /*MEDIA QUERIES*/
-@media screen and (min-width:580px){
+@media screen and (min-width:576px){
     .productosImg{
         flex-direction: row;
         margin-left: 75px;
@@ -280,6 +286,9 @@ color: white;
         height: 12rem;
     }
     .gridProductosPrincipal{
+        grid-template-columns: repeat(2, 18.5rem);
+    }
+    .gridPaginaPrincipalProductos{
         grid-template-columns: repeat(2, 18.5rem);
     }
     .productosImg{
@@ -308,6 +317,9 @@ color: white;
     .gridProductosPrincipal{
         grid-template-columns: repeat(3, 18.5rem);
     }
+    .gridPaginaPrincipalProductos{
+        grid-template-columns: repeat(3, 18.5rem);
+    }
     .productosImg{
         margin-left: 74px;
     }
@@ -328,6 +340,9 @@ color: white;
     .gridProductosPrincipal{
         grid-template-columns: repeat(4, 18.5rem);
     }
+    .gridPaginaPrincipalProductos{
+        grid-template-columns: repeat(4, 18.5rem);
+    }
     .productosImg{
         margin-left: 60px;
     }
@@ -340,6 +355,9 @@ color: white;
 }
 @media screen and (min-width:1920px){
     .gridProductosPrincipal{
+        grid-template-columns: repeat(5, 18.5rem);
+    }
+    .gridPaginaPrincipalProductos{
         grid-template-columns: repeat(5, 18.5rem);
     }
     .productosImg{
