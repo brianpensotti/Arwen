@@ -43,11 +43,17 @@ nav{
 }
 
 /*PÁGINA PRINCIPAL*/
+.imgCarr{
+    width: 50%;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
 .gridProductosPrincipal{
     display: grid;
     justify-content: center;
     justify-items: center;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 .principalImgTamanioProductos{
     width: 18rem;
