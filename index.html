@@ -8,7 +8,7 @@
     <title>Arwen</title>
 
     <!--ESTILOS DE BOOTSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="styles/bootstrap.css" rel="stylesheet">
 
     <!--ESTILOS PROPIOS-->
     <link rel="stylesheet" href="styles/style.css">
@@ -24,7 +24,19 @@
         <nav>
             <a id="arriba" href="index.html"><img src="img/logo.png" alt="logo-arwen" width="150"></a>
             <a class= "nav_hipervinculo" href="index.html">Principal</a>
-            <a class= "nav_hipervinculo" href="pages/productos.html">Productos</a>
+            <div class="dropdown">
+                <button class="productosBoton" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="listaBackground" class="dropdown-item" href="pages/agendas-2022.html">Agendas 2022</a></li>
+                  <li><a class="listaBackground" class="dropdown-item" href="pages/agendas-especiales.html">Agendas Especiales</a></li>
+                  <li><a class="listaBackground" class="dropdown-item" href="pages/cuadernos-pediatricos.html">Cuadernos pediatricos</a></li>
+                  <li><a class="listaBackground" class="dropdown-item" href="pages/cuadernos-universitarios.html">Cuadernos Universitarios</a></li>
+                  <li><a class="listaBackground" class="dropdown-item" href="pages/cuadernos-personalizados.html">Cuadernos Personalizados</a></li>
+                  <li><a class="listaBackground" class="dropdown-item" href="pages/cuadernos-souvenir.html">Cuadernos para Souvenir</a></li>
+                </ul>
+              </div>
             <a class= "nav_hipervinculo" href="pages/sobre-nosotros.html">Nosotros</a>
             <a class= "nav_hipervinculo" href="pages/ubicacion.html">Ubicación</a>
             <a class= "nav_hipervinculo" href="pages/contacto.html">Contacto</a>
@@ -33,18 +45,26 @@
 
     <!--CONTENIDO PRINCIPAL-->
     <main>
-        <h1 class="h1Fuente">Cuadernos Arwen</h1>
         <section class="container text-center">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="imgCarr" src="img/05.jpg" class="d-block w-100" alt="agenda2022-colores">
+                    <img class="imgCarr" src="img/pagina-productos/04.jpeg" class="d-block w-100" alt="agenda2022-alicia">
                 </div>
                 <div class="carousel-item">
-                    <img class="imgCarr" src="img/11.jpg" class="d-block w-100" alt="agenda-harry2">
+                    <img class="imgCarr" src="img/pagina-productos/03.jpeg" class="d-block w-100" alt="agenda-abstracta">
                 </div>
                 <div class="carousel-item">
-                    <img class="imgCarr" src="img/12.jpg" class="d-block w-100" alt="agenda-docente">
+                    <img class="imgCarr" src="img/pagina-productos/01.png" class="d-block w-100" alt="agenda-mickey">
+                </div>
+                <div class="carousel-item">
+                    <img class="imgCarr" src="img/pagina-productos/02.png" class="d-block w-100" alt="agenda-mickey">
+                </div>
+                <div class="carousel-item">
+                    <img class="imgCarr" src="img/pagina-productos/05.jpeg" class="d-block w-100" alt="agenda-mickey">
+                </div>
+                <div class="carousel-item">
+                    <img class="imgCarr" src="img/pagina-productos/06.jpeg" class="d-block w-100" alt="agenda-mickey">
                 </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -96,6 +116,6 @@
     </footer>
 
 <!--SCRIPT DE BOOTSTRAP-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="scripts/bootstrap.bundle.js"></script>
 </body>
 </html>

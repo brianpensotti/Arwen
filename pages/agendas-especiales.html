@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendas Especiales</title>
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="icon" href="../img/logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Lobster&family=Merienda+One&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agendas Especiales</title>
+    
+        <!--ESTILOS DE BOOTSTRAP-->
+        <link href="../styles/bootstrap.css" rel="stylesheet">
+    
+        <!--ESTILOS PROPIOS-->
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="icon" href="../img/logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Lobster&family=Merienda+One&display=swap" rel="stylesheet">
+    </head>
 
 <body  class="agendasEspecialesSect">
     <!--ENCABEZADO-->
@@ -19,7 +24,19 @@
         <nav>
             <a id="arriba" href="../index.html"><img src="../img/logo.png" alt="logo-arwen" width="150"></a>
             <a class= "nav_hipervinculo" href="../index.html">Principal</a>
-            <a class= "nav_hipervinculo" href="productos.html">Productos</a>
+            <div class="dropdown">
+                <button class="productosBoton" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="listaBackground" class="dropdown-item" href="agendas-2022.html">Agendas 2022</a></li>
+                  <li><a class="listaBackground" class="dropdown-item" href="agendas-especiales.html">Agendas Especiales</a></li>
+                  <li><a class="listaBackground" class="dropdown-item" href="cuadernos-pediatricos.html">Cuadernos pediatricos</a></li>
+                  <li><a class="listaBackground" class="dropdown-item" href="cuadernos-universitarios.html">Cuadernos Universitarios</a></li>
+                  <li><a class="listaBackground" class="dropdown-item" href="cuadernos-personalizados.html">Cuadernos Personalizados</a></li>
+                  <li><a class="listaBackground" class="dropdown-item" href="cuadernos-souvenir.html">Cuadernos para Souvenir</a></li>
+                </ul>
+              </div>
             <a class= "nav_hipervinculo" href="sobre-nosotros.html">Nosotros</a>
             <a class= "nav_hipervinculo" href="ubicacion.html">Ubicación</a>
             <a class= "nav_hipervinculo" href="contacto.html">Contacto</a>
@@ -30,11 +47,6 @@
     <main class="agendasEspecialesSectVH1920">
         <section>
             <h1 class="h1FuenteV2">Agendas Especiales</h1>
-            <div class="productoVolverBox">
-                <div class="productoVolverBox2">
-                    <a class= "productosVolver" href="productos.html">Volver a Productos</a>
-                </div>
-            </div>
             <div class="productosCategoriaBox">
                 <div class="productosImg">
                     <div class="productoIndividual">
@@ -87,5 +99,8 @@
             </div>
         </section>
     </footer>
+
+<!--SCRIPT DE BOOTSTRAP-->
+<script src="../scripts/bootstrap.bundle.js"></script>
 </body>
 </html>

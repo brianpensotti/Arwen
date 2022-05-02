@@ -41,10 +41,27 @@ nav{
 .nav_hipervinculo:hover{
     color: white;
 }
+.productosBoton{
+    background-color: black;
+    border: black;
+    color: skyblue;
+    font-style: italic;
+    font-size: x-large;
+}
+.productosBoton:hover{
+    color: white;
+}
+.listaBackground{
+    text-decoration: none;
+    color: skyblue;
+}
+.listaBackground:hover{
+    color: white;
+}
 
 /*PÁGINA PRINCIPAL*/
 .imgCarr{
-    width: 50%;
+    width: 100%;
     border-radius: 15px;
     margin-top: 2rem;
 }
@@ -66,50 +83,11 @@ nav{
     transform:scale(1.2);
 }
 
-/*PÁGINA PRINCIPAL DE PRODUCTOS*/
-.productosListaBox{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-.productosLista{
-    display: flex;
-    width: 800px;
-}
-.productosListaFormato{
-    list-style: none;
-}
-.productosHipervinculo{
-    text-decoration: none;
-    color:rgb(130, 45, 130);
-    font-size: 1rem;
-    font-family: cursive;
-    transition: all 0.4s;
-}
-.productosHipervinculo:hover{
-    color: white;
-}
-.productosPaginaTamanio{
-    width: 18rem;
-    transition: all 0.4s;
-    padding: .3rem;
-    border-radius: 15px;
-}
-.productosPaginaTamanio:hover{
-    -webkit-transform:scale(1.2);
-    transform:scale(1.2);
-}
-.gridPaginaPrincipalProductos{
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    margin-bottom: 2rem;
-}
-
 /*PÁGINA DE PRODUCTOS*/
 .productosCategoriaBox{
     display: flex;
     margin-bottom: 10px;
+    margin-top: 2rem;
     justify-content: center;
 }
 .productosImg{
@@ -122,6 +100,7 @@ nav{
     display: flex;
     flex-direction: column;
     transition: all 0.4s;
+    margin: 0.5rem;
 }
 .productoIndividual:hover{
     -webkit-transform:scale(1.3);
@@ -137,26 +116,6 @@ nav{
     padding-left: 24px;
     color:rgb(130, 45, 130);
     font-weight: bold;
-}
-.productoVolverBox{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    margin-left: 11px;
-}
-.productoVolverBox2{
-    display: flex;
-    width: 1120px;
-}
-.productosVolver{
-    text-decoration: none;
-    color:rgb(130, 45, 130);
-    font-size: 1.5rem;
-    font-family: cursive;
-    transition: all 0.4s;
-}
-.productosVolver:hover{
-    color: white;
 }
 
 /*PÁGINA SOBRE NOSOTROS*/
@@ -202,6 +161,7 @@ nav{
     display: flex;
     width: 10rem;
     justify-content: center;
+    margin-bottom: 0.5rem;
 }
 .mapa__direccion{
     font-style: italic;
@@ -288,6 +248,9 @@ color: white;
 
 /*MEDIA QUERIES*/
 @media screen and (min-width:576px){
+    .imgCarr{
+        width: 70%;
+    }
     .productosImg{
         flex-direction: row;
         margin-left: 75px;
@@ -303,6 +266,9 @@ color: white;
     nav{
         flex-direction: row;
         height: 12rem;
+    }
+    .imgCarr{
+        width: 50%;
     }
     .gridProductosPrincipal{
         grid-template-columns: repeat(2, 18.5rem);
