@@ -1,3 +1,12 @@
+.productosPrincipal{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.prodContainer{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 body{
     margin: 0;
     background-color: skyblue;
@@ -65,13 +74,6 @@ nav{
     border-radius: 15px;
     margin-top: 2rem;
 }
-.gridProductosPrincipal{
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
 .principalImgTamanioProductos{
     width: 18rem;
     transition: all 0.4s;
@@ -84,21 +86,8 @@ nav{
 }
 
 /*PÁGINA DE PRODUCTOS*/
-.productosCategoriaBox{
-    display: flex;
-    margin-bottom: 10px;
-    margin-top: 2rem;
-    justify-content: center;
-}
-.productosImg{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: 1.5rem;
-}
 .productoIndividual{
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     transition: all 0.4s;
     margin: 0.5rem;
 }
@@ -112,8 +101,6 @@ nav{
 }
 .productosTextoBoxLeyenda{
     width: 200px;
-    height: 140px;
-    padding-left: 24px;
     color:rgb(130, 45, 130);
     font-weight: bold;
 }
@@ -344,7 +331,7 @@ color: white;
         margin-left: 60px;
     }
     #img19Fix{
-        display: block;
+        display: inline;
     }
     .iframeBox{
         width: 90rem;
@@ -365,12 +352,6 @@ color: white;
         margin-left: 29px;
     }
     .formularioVH{
-        height: 70vh;
-    }
-    #img18Fix{
-        display: none;
-    }
-    .agendas2022-vh-1920{
         height: 100vh;
     }
     .agendasEspecialesSectVH1920{
